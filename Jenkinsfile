@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                withMaven(maven : 'localMaven'){
+                withMaven(maven : 'maven_3_6_0') {
                     sh 'mvn --version'
                 }
             }
